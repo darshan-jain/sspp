@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Elective Course</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+    <style>
+      .sideheads{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 10px;
+        margin: 0px
+      }
+      .form-control{
+        margin: 0px
+      }
+      .form-group{
+        margin: 10px;
+      }
+
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="inner">
+        <nav>
+          <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#activity-1">Elective Form</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+          <h1>Welcome to the Elective Management System</h1>
+          <p>Please choose your electives here.</p>
+          <ul class="actions">
+            <li><a href="#activity-1" class="button scrolly">Proceed</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- One -->
+      <section id="activity-1" class="wrapper style2 spotlights">
+        <section>
+
+          <div class="content">
+            <div class="container mt-5">
+              <h1>Electives Choice</h1>
+              <span>*Required</span>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="card">
+                    <div class="card-body">
+            
+                      <!-- Makes POST request to /register route -->
+                      <form name = "myform" action="http://localhost:3000" method="GET" >
+      
+                        <div class="form-group">
+                          <div class="sideheads">Name<span>*</span></div>
+                          <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                          <div class="sideheads">Roll No:<span>*</span></div>
+                          <input type="text" class="form-control" name="roll" required>
+                        </div>
+                        <div class="form-group">
+                          <div class="sideheads">Enter Elective 1 Choice: <span>*</span></div>
+                          <input type="text" class="form-control" name="eleco" required>
+                        </div>
+                        <div class="form-group">
+                          <div class="sideheads">Enter Elective 2 Choice:<span>*</span></div>
+                          <input type="text" class="form-control" name="elect" required>
+                        </div>
+
+                        <br>
+
+                        <button type="submit" name = "submit">Submit</button>
+                      </form>
+            
+                    </div>
+                  </div>
+                </div>
+            
+            
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <center>
+        <ul class="menu">
+          <li>All rights reserved.</li>
+        
+        </ul>
+      </center>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
